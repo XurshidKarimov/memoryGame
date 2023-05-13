@@ -3,7 +3,11 @@ module.exports = {
   darkMode: 'class',
   content: ["./index.html", "./js/main.js"],
   theme: {
-    extend: {    },
+    extend: {
+      gridTemplateColumns: {
+        'card-block': 'repeat(auto-fill, minmax(250px, 1fr))', 
+      }
+    },
   },
   plugins: [],
 }

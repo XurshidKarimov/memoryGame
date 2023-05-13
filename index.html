@@ -11,24 +11,25 @@
 <body class="dark:bg-slate-950 transition linear duration-300">
     <main>
         <div class="main pt-5">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-4 md:w-[768px]">
                 <div class="content flex flex-col gap-y-3">
                     <div class="content-top flex items-center justify-between">
                         <h1 class='text-slate-900 font-extrabold transition linear duration-300 dark:text-yellow-50'>Memory Card Game</h1>
                         <button class="darkBTN px-3 py-1 font-[500] rounded-md shadow-md transition linear duration-300 dark:text-yellow-50 dark:shadow-emerald-700">Dark Mode</button>
                     </div>
                     
-                    <ul class="cards-block grid grid-cols-5 gap-7">
-                        <li data-animalName="cow" class="p-1 cursor-pointer rounded-md shadow-md shadow-slate-950 dark:shadow-emerald-700 md:p-2">
-                            <img src="./assets/img/tinified/cow.png" alt="">
-                        </li>
-                    </ul>
+                    <ul class="cards-block grid grid-cols-5 gap-7"></ul>
                 </div>
             </div>
         </div>
     </main>
 
-
+    <template id="cardTemplate">
+        <li data-animalName="" data-pseudoElementClass="" 
+        class="card relative p-1 cursor-pointer rounded-md shadow-md shadow-slate-950 transition linear duration-300 after:content-[attr(data-pseudoElementClass)] after:absolute after:top-0 after:left-0 after:block after:w-full after:h-full after:bg-red-500  after:cursor-pointer after:rounded-md after:shadow-md after:shadow-slate-950 after:transition after:linear after:duration-300 dark:shadow-emerald-700 md:p-2">
+            <img src="" alt="">
+        </li>
+    </template>
 
 
     <script src="./js/main.js"></script>
